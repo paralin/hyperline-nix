@@ -7,7 +7,9 @@ Hyperline plays Deadlock through Steam and Proton. On NixOS, Steam runs games
 inside an FHS environment that has the usual Linux layout, and a Hyperline
 started outside it cannot start Proton to host a game. This package runs
 Hyperline inside that same environment, with the libraries its window needs, so
-it works without `nix-ld` or `steam-run`.
+you do not need to set up `nix-ld` or install `steam-run` yourself. Desktop
+releases from 154 on also find `steam-run` on their own when started outside
+this package, but this package is the supported way to run on NixOS.
 
 ## Install
 
